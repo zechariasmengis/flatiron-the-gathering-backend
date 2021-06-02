@@ -1,4 +1,3 @@
 class Collection < ApplicationRecord
-    belongs_to :user
-    belongs_to :card
+    has_many :cards
 end

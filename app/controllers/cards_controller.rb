@@ -15,6 +15,7 @@ class CardsController < ApplicationController
 
   # POST /cards
   def create
+    
     @card = Card.new(card_params)
 
     if @card.save
@@ -35,6 +36,7 @@ class CardsController < ApplicationController
 
   # DELETE /cards/1
   def destroy
+    byebug
     @card.destroy
   end
 
@@ -46,6 +48,6 @@ class CardsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def card_params
-      params.require(:card).permit(:name, :attribute, :attribute_strength, :hp, :rarity, :holographic)
+      params.require(:card).permit(:name, :ability, :ability_strength, :hp, :rarity, :holographic, :description, :image)
     end
 end

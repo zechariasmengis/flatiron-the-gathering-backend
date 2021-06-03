@@ -10,6 +10,7 @@ require 'faker'
 # Card.create(name: '', ability: '', ability_strength: , hp: , rarity: '', holographic: '', image: '')
 
 Card.delete_all
+Collection.delete_all
 
 Card.create(name: "Aiden ", image: "https://ca.slack-edge.com/T02MD9XTF-U01J27DEBJR-c025e912671d-512", hp: 50, ability: "Death Touch", description: Faker::Books::Dune.quote(character: "baron_harkonnen"), ability_strength: rand(10..50), rarity: ["common", "uncommon", "rare"].sample, holographic: ["plain", "epic", "legendary"].sample)
 Card.create(name: "Alexandra", image: "https://ca.slack-edge.com/T02MD9XTF-U01P3M7H6TZ-3f0e30a00702-512", hp: 50, ability: "Defender", description: Faker::Books::Dune.quote, ability_strength: rand(10..50), rarity: ["common", "uncommon", "rare"].sample, holographic: ["plain", "epic", "legendary"].sample)
@@ -28,4 +29,6 @@ Card.create(name: "Greg", image: "https://ca.slack-edge.com/T02MD9XTF-U8H2RA3C1-
 Card.create(name: "Michelle", image: "https://ca.slack-edge.com/T02MD9XTF-U9C1QTFPC-e5129d5d4af5-512", hp: 50, ability: "Trample", description: Faker::Books::Dune.quote(character: "baron_harkonnen"), ability_strength: rand(10..50), rarity: ["common", "uncommon", "rare"].sample, holographic: ["plain", "epic", "legendary"].sample)
 Card.create(name: "Toni", image: "https://ca.slack-edge.com/T02MD9XTF-U01JWUFBCQ0-4baa729d7cc6-512", hp: 50, ability: "Vigilance", description: Faker::Books::Dune.quote(character: "baron_harkonnen"), ability_strength: rand(10..50), rarity: ["common", "uncommon", "rare"].sample, holographic: ["plain", "epic", "legendary"].sample)
 Card.create(name: "Flatiron Bot", image: "https://ca.slack-edge.com/T02MD9XTF-U018FLQULG5-12970b5dba93-512", hp: 50, ability: "Method DELETE", description: Faker::Books::Dune.quote(character: "baron_harkonnen"), ability_strength: rand(10..50), rarity: ["common", "uncommon", "rare"].sample, holographic: ["plain", "epic", "legendary"].sample)
+
+Collection.create(card_id: 1, name: "Chris", ability: "Test", ability_strength: 40, hp: 50, rarity: "uncommen", holographic: "legendary", image: "https://ca.slack-edge.com/T02MD9XTF-U01LYNW3TMM-de7dfc536650-512", description: "hello there")
 puts 'seeded'

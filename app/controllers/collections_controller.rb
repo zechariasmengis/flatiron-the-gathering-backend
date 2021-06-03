@@ -1,5 +1,5 @@
 class CollectionsController < ApplicationController
-  before_action :set_collection, only: [:show, :update, :destroy]
+  before_action :set_collection, only: [:show, :post, :update, :destroy]
 
   # GET /collections
   def index

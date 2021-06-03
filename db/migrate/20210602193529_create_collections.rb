@@ -10,7 +10,7 @@ class CreateCollections < ActiveRecord::Migration[6.1]
       t.string :holographic
       t.string :image
       t.string :description
-
+      t.integer :likes
       t.timestamps
     end
   end

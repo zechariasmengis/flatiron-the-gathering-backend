@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 2021_06_02_193529) do
     t.string "holographic"
     t.string "image"
     t.string "description"
+    t.integer "likes"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -38,6 +39,7 @@ ActiveRecord::Schema.define(version: 2021_06_02_193529) do
     t.string "holographic"
     t.string "image"
     t.string "description"
+    t.integer "likes"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
